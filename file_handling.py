@@ -1,10 +1,10 @@
-file_name = input("Please input the name of the txt file you wish to read: ")
+file_name = input("Please input the name of the file you wish to read: ")
 try:
     with open(file_name, "r") as file:
         data = file.read()
 except FileNotFoundError:
     print("File not found. Please check the filename.")
-    file_name = input("Please input the name of the txt file you wish to read: ")
+    file_name = input("Please input the name of the file you wish to read: ")
     try:
        with open(file_name, "r") as file:
            data = file.read() 
